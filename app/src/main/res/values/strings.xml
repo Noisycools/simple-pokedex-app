@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Layout</string>
+    <string name="login_title">Layout Login Sederhana</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_success_title">Success</string>
+    <string name="login_success_message">Welcome, %1$s!</string>
+    <string name="login_failure_title">Login Failed</string>
+    <string name="login_failure_message">Invalid username or password.</string>
+    <string name="ok">OK</string>
+</resources>
