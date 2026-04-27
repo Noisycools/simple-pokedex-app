@@ -1,5 +1,6 @@
 package com.example.layout
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -30,10 +31,9 @@ class MainActivity : AppCompatActivity() {
             val password = binding.editTextPassword.text.toString().trim()
 
             if (username == "admin" && password == "admin123") {
-                showAlertDialog(
-                    getString(R.string.login_success_title),
-                    getString(R.string.login_success_message, username)
-                )
+                val intent = Intent(this, PokemonListActivity::class.java)
+                startActivity(intent)
+                finish()
             } else {
                 showAlertDialog(
                     getString(R.string.login_failure_title),
